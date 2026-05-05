@@ -1,0 +1,39 @@
+Requisitos
+Foram utilizados os seguintes requisitos no  ambiente:
+Python 3.8
+Bibliotecas Python: pandas, numpy, tensorflow, scikit-learn, matplotlib
+
+Etapas do Projeto
+Carregando e Preparando os Dados:
+O primeiro passo é carregar os dados do arquivo CSV fornecido e realizar algumas etapas de pré-processamento. Os dados serão divididos em variáveis preditoras (features) e variável de destino (target). Além disso, será feita a divisão dos dados em conjuntos de treinamento e teste.
+
+Definindo e Treinando o Modelo:
+Será criado um modelo de rede neural utilizando a biblioteca TensorFlow/Keras. O modelo será treinado utilizando a técnica de validação cruzada k-fold, que permite avaliar o desempenho do modelo em diferentes conjuntos de treinamento e teste.
+
+Avaliando o Modelo:
+Após o treinamento, o modelo será avaliado em um conjunto de teste separado. Serão calculadas métricas de desempenho, como acurácia, precisão e recall, para avaliar a capacidade de generalização do modelo.
+
+Fazendo Previsões:
+Finalmente, o modelo será utilizado para fazer previsões sobre a sobrevivência de novos passageiros. As previsões serão salvas em um arquivo CSV.
+
+Executando o Projeto
+Instalar as Dependências:
+Abra um terminal ou prompt de comando e certifique-se de ter instalado as bibliotecas necessárias executando o seguinte comando:
+pip install pandas numpy tensorflow scikit-learn matplotlib
+
+Baixar os Arquivos:
+
+Baixe o arquivo Titanic_dataset.csv e coloque-o na pasta do projeto.
+
+Executar os Scripts:
+
+Execute os scripts na seguinte ordem:
+python data_loading.py
+python model_setup.py
+python model_train.py
+python model_evaluate.py
+python make_predictions.py
+Cada script realizará uma etapa específica do projeto, e os resultados serão armazenados em arquivos CSV e gráficos.
+
+Observações
+Certifique-se de que todos os arquivos CSV estejam na pasta correta e de que o caminho dos arquivos esteja correto nos scripts.
